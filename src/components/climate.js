@@ -6,8 +6,8 @@ const Climate = (props) => {
   if(props.latitude>0 && month>3 && month <9){
 
     return <div >
-            <h1 style={{ fontFamily: 'Pacifico', marginLeft: 40}}>Summer Hot, Let hits the beaches!</h1>
-            <img  style={{ height:540, width:540, borderRadius:450 }} src="https://68.media.tumblr.com/cb49349814a762b5c4451d9fac7d20a8/tumblr_nb5mq5vxfL1txsau8o1_1280.jpg" alt='avatar'/>
+            <h1 style={{ fontFamily: 'Pacifico', marginLeft: 40 }}>Summer Hot, Let hits the beaches!</h1>
+            <img  style={{ height:540, width:540, borderRadius:450, }} src="https://68.media.tumblr.com/cb49349814a762b5c4451d9fac7d20a8/tumblr_nb5mq5vxfL1txsau8o1_1280.jpg" alt='avatar'/>
         </div>
   }
 
