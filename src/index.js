@@ -15,12 +15,15 @@ constructor(props){
 
 
   render(){
-    return(
-      <div>
-    Latitude: {this.state.lat} <br />
-    Error: {}
-      </div>
-    )
+    if(!this.state.lat && this.state.err){
+      return <div> Error: {this.state.err } </div>
+    }
+    if(this.state.lat && !this.state.err){
+      return <div>Latitude: {this.state.lat} </div>
+    }
+    if(!this.state.lat && !this.state.err){
+      return <div>Loading...</div>
+    }
   }
 }
 ReactDOM.render(<App />, document.getElementById('root'));
