@@ -21,7 +21,11 @@ componentDidMount(){
       return <div><SeasonDisplay lati={this.state.lat}/></div>
     }
     if(!this.state.lat && !this.state.err){
-      return <div><Spinner /></div>
+      return <div className='container text-center' style={{ marginTop: '300px'}}>
+
+        <Spinner />
+
+      </div>
     }
   }
 }
